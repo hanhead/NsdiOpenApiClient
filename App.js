@@ -40,7 +40,7 @@ export default class App extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <MapView style={styles.map} initialRegion={myPlace.initialRegion}>
+                <MapView style={styles.map} mapType="satellite" initialRegion={myPlace.initialRegion}>
                     <Geojson geojson={myPlace} />
                 </MapView>
                 <Text>PNU</Text>
